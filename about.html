@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me - Kshitij</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header a { color: white; text-decoration: none; margin: 0 15px; }
+
+        .container {
+            background-color: #3d3d3d;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            border: 1px solid #555;
+            /* This is the most important part to fix the overlap */
+            display: inline-block; 
+            width: 90%;
+        }
+
+        .img-left {
+            float: left;
+            width: 250px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+        }
+
+        .img-right {
+            float: right;
+            width: 220px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+        }
+
+        /* This fixes the "wtf" alignment by forcing each section to stay separate */
+        .clear-section {
+            clear: both;
+            padding-top: 20px;
+        }
+
+        h1, h3 { color: #add8e6; }
+        footer { text-align: center; padding: 20px; background-color: #222; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <b style="font-size: 22px;">KSHITIJ PORTFOLIO</b><br><br>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </header>
+
+    <center>
+    <div class="container">
+        <h1>About Me</h1>
+        
+        <img src="me.jpeg" class="img-left" alt="Kshitij">
+        <p>I am a student currently studying Computer Science and Engineering at Vellore Institute of Technology. I have a strong interest in technology and I hope to become a successful entrepreneur in the future. I enjoy learning new programming languages like C++ and Python, and I am always looking for new projects to build.</p>
+        <p>I am originally from a background where I spent a lot of time experimenting with computers. Moving to VIT has been a great experience because I get to meet people who have the same goals as I do. I am excited to see where my engineering journey takes me.</p>
+
+        <div class="clear-section">
+            <h3>Hobbies and Interests</h3>
+            
+            <p>
+                <img src="me1.jpeg" class="img-right" alt="Pool">
+                One of my biggest hobbies is video editing. I find it very satisfying to take raw clips and turn them into something meaningful. It requires a lot of patience and attention to detail, which are skills I also use when I am coding.
+            </p>
+        </div>
+
+        <div class="clear-section">
+            <p>
+                <img src="hobby1.jpg" class="img-right" alt="Badminton">
+                I also love to play Badminton, I enjoy the sport alot and love to play it whenever I get time to play, I also love to play pool along with my friends.
+            </p>
+        </div>
+
+        <div class="clear-section">
+            <p>
+                <img src="hobby2.jpg" class="img-right" alt="Coding">
+                Finally, I enjoy spending my free time practicing coding logic. Whether it is solving problems on LeetCode or building small tools for my own use, I find the process of logical problem-solving very rewarding.
+            </p>
+        </div>
+    </div>
+    </center>
+
+    <footer>
+        <p>&copy; 2026 Kshitij Khandelwal</p>
+    </footer>
+
+</body>
+</html>

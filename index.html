@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Kshitij</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            background-color: #333333; 
+            color: white; 
+            font-family: "Trebuchet MS", sans-serif; 
+            line-height: 1.6; 
+            scroll-behavior: smooth; 
+        }
+
+        .name-style { color: #add8e6; font-size: 1.2em; }
+        
+        header { 
+            background-color: #222222; 
+            padding: 15px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+        }
+
+        header a { color: white; margin: 0 15px; text-decoration: none; }
+        header a:hover { color: lightblue; }
+
+        /* Banner styling */
+        .banner-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(60%);
+        }
+
+        .section-box { 
+            border: 1px solid #555555; 
+            margin: 20px; 
+            padding: 30px; 
+            background-color: #3d3d3d; 
+            border-radius: 4px;
+        }
+
+        .btn-1 { background-color: #0056b3; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px; }
+        .btn-2 { background-color: transparent; color: white; border: 1px solid white; padding: 10px 20px; margin-left: 10px; border-radius: 4px; }
+        
+        .skill-item { 
+            display: inline-block; 
+            width: 28%; 
+            min-width: 150px; 
+            margin: 10px; 
+            padding: 20px; 
+            background: #2c2c2c; 
+            border-bottom: 3px solid #add8e6; 
+            text-align: center; 
+        }
+
+        .link-text { color: #add8e6; text-decoration: underline; }
+        
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            background-color: #222222; 
+            font-size: 0.9em; 
+            color: #bbb; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <b style="font-size: 20px;">KSHITIJ's PORTFOLIO</b>
+        <br><br>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </header>
+
+    <div class="banner-container">
+        <img 
+            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1470&auto=format&fit=crop" 
+            alt="Workspace Banner" 
+            class="banner-image"
+        >
+    </div>
+
+    <section id="home" style="text-align: center; padding: 60px 10px;">
+        <h1 class="text-4xl font-bold">Welcome to my Website</h1>
+        <p class="mt-4 text-xl text-gray-300">Hi, I am <span class="name-style font-bold">Kshitij</span>.</p>
+        <div class="mt-6 max-w-xl mx-auto">
+            <p>I am a student at <b>Vellore Institute of Technology</b>. I want to be an entrepreneur and I love building cool things!</p>
+        </div>
+        <div class="mt-8">
+            <button class="btn-1" onclick="window.location.href='projects.html'">View My Projects</button>
+            <button class="btn-2" onclick="window.location.href='about.html'">About Me</button>
+        </div>
+    </section>
+
+    <section id="skills" class="section-box text-center">
+        <h2 class="text-2xl font-bold mb-6 text-blue-300">Technical Skills</h2>
+        <div class="flex flex-wrap justify-center">
+            <div class="skill-item"><b>C / C++</b></div>
+            <div class="skill-item"><b>Python</b></div>
+            <div class="skill-item"><b>HTML & CSS</b></div>
+            <div class="skill-item"><b>Video Editing</b></div>
+            <div class="skill-item"><b>UI Design</b></div>
+            <div class="skill-item"><b>Entrepreneurship</b></div>
+        </div>
+    </section>
+
+    
+
+    <footer><p>&copy; 2026 Kshitij Khandelwal</p></footer>
+</body>
+</html>
